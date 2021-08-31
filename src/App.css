@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./contents/font/Gilroy-ExtraBold.otf') format('opentype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-family: 'Gilroy', sans-serif;
+  color: white;
+}
+
+.App-contents {
+  background-color: #282c34;
+  height: calc(100vh - 51px);
+  border-top: 1px solid #3e4450;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
