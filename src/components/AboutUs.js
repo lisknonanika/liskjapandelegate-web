@@ -14,7 +14,7 @@ class AboutUs extends React.Component {
             <div className="content">
               <div>{this.props.translation('日本で活動しているコミュニティです。')}</div>
               <div>{this.props.translation('日本人向けにLiskに関する質問回答など様々な支援を行っています。')}</div>
-              <div>{this.props.translation('Liskや等コミュニティに関して不明な点がありましたらお気軽にご質問をどうぞ。')}</div>
+              <div>{this.props.translation('Liskや当コミュニティに関して不明な点がありましたらお気軽にご質問をどうぞ。')}</div>
             </div>
           </div>
   

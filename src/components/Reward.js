@@ -21,7 +21,7 @@ class Reward extends React.Component {
 
   checkhReward = async() => {
     if (!this.state.address.trim()) {
-      await Swal.fire({text: this.props.translation('アドレスを入力してください。'), icon: 'error', confirmButtonColor: '#3085d6'});
+      await Swal.fire({text: this.props.translation('Liskアドレスを入力してください。'), icon: 'error', confirmButtonColor: '#3085d6'});
       return;
     }
 
@@ -88,7 +88,7 @@ class Reward extends React.Component {
                 <div className="reward-result">{this.state.reward} LSK</div>
               </div>
               <div>
-                <div className="reward-title">{this.props.translation('直近10件の払出')}</div>
+                <div className="reward-title">{this.props.translation('直近10件の報酬')}</div>
                 <div className="reward-result">
                   {this.state.history.length > 0?
                     this.state.history.map((o, i) => {
