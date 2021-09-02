@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>Delegate liskjapan</div>
-        <div className="App-language">Lang: {lang === 'en'? <img src={flag_us} alt="en" onClick={() => setLang("ja")}/>:<img src={flag_jp} alt="ja" onClick={() => setLang("en")} align="top"/>}</div>
+        <div className="App-language">Lang: {lang === 'en'? <img src={flag_us} alt="en" onClick={() => setLang("ja")} align="top"/>:<img src={flag_jp} alt="ja" onClick={() => setLang("en")} align="top"/>}</div>
       </header>
       <div className="App-menu">
         <div className={page === 0? "active menu": "menu"} onClick={() => setPage(0)}>About Us</div>
