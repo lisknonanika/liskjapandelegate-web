@@ -24,7 +24,7 @@ class AboutUs extends React.Component {
               <div className="row">
                 <div className="name">liskjapan</div>
                 <div className="address">
-                  <a href="https://lisk.observer/account/lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt" target="_blank">lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt</a>
+                  <a href="https://lisk.observer/account/lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt" target="_new">lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt</a>
                 </div>
               </div>
               <div className="row" style={{marginTop: "5px"}}>
@@ -39,7 +39,7 @@ class AboutUs extends React.Component {
               <div className="row">
                 <div className="name">Lisk Japan Delegate</div>
                 <div className="text">
-                  <a href="https://lisk.observer/account/lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt" target="_blank">
+                  <a href="https://lisk.observer/account/lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt" target="_new">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.4 136.3" className="lisk-icon">
                       <g>
                         <g>
@@ -54,7 +54,7 @@ class AboutUs extends React.Component {
                     </svg> Lisk
                   </a>
                 </div>
-                <div className="text"><a href="https://twitter.com/liskjapan_dlgt" target="_blank"><FontAwesomeIcon icon={faTwitter}/> Twitter</a></div>
+                <div className="text"><a href="https://twitter.com/liskjapan_dlgt" target="_new"><FontAwesomeIcon icon={faTwitter}/> Twitter</a></div>
               </div>
               <div className="row" style={{borderBottom: "1px dotted #404041"}}>
                 <ul>
@@ -65,7 +65,7 @@ class AboutUs extends React.Component {
   
               <div className="row">
                 <div className="name">ebifu222</div>
-                <div className="text"><a href="https://twitter.com/ebifu222" target="_blank"><FontAwesomeIcon icon={faTwitter}/> Twitter</a></div>
+                <div className="text"><a href="https://twitter.com/ebifu222" target="_new"><FontAwesomeIcon icon={faTwitter}/> Twitter</a></div>
               </div>
               <div className="row" style={{borderBottom: "1px dotted #404041"}}>
                 <ul>
@@ -77,7 +77,7 @@ class AboutUs extends React.Component {
               <div className="row">
                 <div className="name">ys_mdmg</div>
                 <div className="text">
-                  <a href="https://lisk.observer/account/lskb7gxff65y6epkmkoqe8xkq7qu5bcnnet6d2nco" target="_blank">
+                  <a href="https://lisk.observer/account/lskb7gxff65y6epkmkoqe8xkq7qu5bcnnet6d2nco" target="_new">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.4 136.3" className="lisk-icon">
                       <g>
                         <g>
@@ -92,9 +92,9 @@ class AboutUs extends React.Component {
                     </svg> Lisk
                   </a>
                 </div>
-                <div className="text"><a href="https://twitter.com/ys_mdmg" target="_blank"><FontAwesomeIcon icon={faTwitter}/> Twitter</a></div>
-                <div className="text"><a href="https://github.com/lisknonanika" target="_blank"><FontAwesomeIcon icon={faGithub}/> GitHub</a></div>
-                <div className="text"><a href="https://note.com/lisknonanika" target="_blank"><FontAwesomeIcon icon={faBookOpen}/> note</a></div>
+                <div className="text"><a href="https://twitter.com/ys_mdmg" target="_new"><FontAwesomeIcon icon={faTwitter}/> Twitter</a></div>
+                <div className="text"><a href="https://github.com/lisknonanika" target="_new"><FontAwesomeIcon icon={faGithub}/> GitHub</a></div>
+                <div className="text"><a href="https://note.com/lisknonanika" target="_new"><FontAwesomeIcon icon={faBookOpen}/> note</a></div>
               </div>
               <div className="row">
                 <ul>
@@ -112,9 +112,9 @@ class AboutUs extends React.Component {
               <div className="row">
                 <div className="name">Lisk Sercice</div>
                 <div className="text">
-                  <a href="https://mainnet-service.liskjapandelegate.jp/api/status" target="_blank">Mainnet</a>
+                  <a href="https://mainnet-service.liskjapandelegate.jp/api/status" target="_new">Mainnet</a>
                   &nbsp;/&nbsp;
-                  <a href="https://testnet-service.liskjapandelegate.jp/api/status" target="_blank">Testnet</a>
+                  <a href="https://testnet-service.liskjapandelegate.jp/api/status" target="_new">Testnet</a>
                 </div>
               </div>
             </div>

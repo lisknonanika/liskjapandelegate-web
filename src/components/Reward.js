@@ -1,6 +1,6 @@
 import React from 'react';
 import Swal from 'sweetalert2'
-import transactions, { convertBeddowsToLSK } from '@liskhq/lisk-transactions';
+import { convertBeddowsToLSK } from '@liskhq/lisk-transactions';
 import '../App.css';
 
 class Reward extends React.Component {
@@ -9,7 +9,7 @@ class Reward extends React.Component {
     this.state = {
       address: "",
       reward: "0",
-      history: new Array()
+      history: []
     };
     this.setText = this.setText.bind(this);
     this.checkhReward = this.checkhReward.bind(this);
@@ -26,7 +26,7 @@ class Reward extends React.Component {
     }
 
     let reward = "0";
-    let history = new Array();
+    let history = [];
     try {
       const res = await fetch("https://payout.liskjapandelegate.jp", {mode: 'cors'});
       const json = await res.json();
