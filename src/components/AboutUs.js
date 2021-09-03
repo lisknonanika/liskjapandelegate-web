@@ -104,7 +104,7 @@ class AboutUs extends React.Component {
             <div className="title">{this.props.translation('製品・管理')}</div>
             <div className="content">
               <div className="row">
-                <div className="name">Lisk Sercice</div>
+                <div className="name">Lisk Service</div>
                 <div className="text">
                   <a href="https://mainnet-service.liskjapandelegate.jp/api/status" target="_new">Mainnet</a>
                   &nbsp;/&nbsp;
