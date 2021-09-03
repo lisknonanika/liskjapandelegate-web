@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBookOpen, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import '../App.css';
 
 class AboutUs extends React.Component {
@@ -63,7 +63,7 @@ class AboutUs extends React.Component {
               <div className="row" style={{borderBottom: "1px dotted #404041"}}>
                 <ul>
                   <li>{this.props.translation('Lisk Japan DelegateのTwitterアカウントの管理')}</li>
-                  <li>{this.props.translation('Liskに関する質問内容の回答など日本人へのサポート')}</li>
+                  <li>{this.props.translation('Liskに関する質問回答などの日本人サポート')}</li>
                 </ul>
               </div>
   
@@ -94,7 +94,7 @@ class AboutUs extends React.Component {
                 <ul>
                   <li>{this.props.translation('ノード・サイト管理')}</li>
                   <li>{this.props.translation('Liskに関するツール・アプリの開発')}</li>
-                  <li>{this.props.translation('Liskに関する質問内容の回答など日本人へのサポート')}</li>
+                  <li>{this.props.translation('Liskに関する質問回答などの日本人サポート')}</li>
                 </ul>
               </div>
             </div>
@@ -121,6 +121,51 @@ class AboutUs extends React.Component {
               </div>
             </div>
           </div>
+  
+          <div className="content-area">
+            <div className="title">{this.props.translation('リンク')}</div>
+            <div className="content">
+              <div className="row">
+                <div className="name" style={{fontWeight: "bold", whiteSpace: "nowrap"}}>{this.props.translation('Lisk 公式')}</div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://lisk.com/" target="_new"><FontAwesomeIcon icon={faGlobe}/> Site</a></div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://twitter.com/LiskHQ" target="_new"><FontAwesomeIcon icon={faTwitter}/> Twitter</a></div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://github.com/LiskHQ" target="_new"><FontAwesomeIcon icon={faGithub}/> GitHub</a></div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://lisk.chat" target="_new"><FontAwesomeIcon icon={faDiscord}/> Discord</a></div>
+              </div>
+              <div className="row">
+                <div className="name" style={{whiteSpace: "nowrap"}}>Lisk Observer</div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://lisk.observer/" target="_new"><FontAwesomeIcon icon={faGlobe}/> Site(Explorer)</a></div>
+              </div>
+              <div className="row">
+                <div className="name" style={{whiteSpace: "nowrap"}}>Lisk Scan</div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://liskscan.com/" target="_new"><FontAwesomeIcon icon={faGlobe}/> Site(Explorer)</a></div>
+              </div>
+              <div className="row">
+                <div className="name" style={{fontWeight: "bold", whiteSpace: "nowrap"}}>Lisk.vote</div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://lisk.vote/" target="_new"><FontAwesomeIcon icon={faGlobe}/> Site</a></div>
+              </div>
+              <div className="row">
+                <div className="name" style={{fontWeight: "bold", whiteSpace: "nowrap"}}>Lisk Rewards</div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://liskrewards.com/" target="_new"><FontAwesomeIcon icon={faGlobe}/> Site</a></div>
+              </div>
+              <div className="row">
+                <div className="name" style={{fontWeight: "bold", whiteSpace: "nowrap"}}>{this.props.translation('日本語コミュニティ')}</div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://discord.com/invite/jWruheS" target="_new"><FontAwesomeIcon icon={faDiscord}/> Discord</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="content-area">
+            <div className="title" style={{backgroundColor: "#da0000", borderColor: "#da0000", fontWeight: "bold"}}>注意</div>
+            <div className="content" style={{backgroundColor: "rgba(233, 223, 37, 0.05)", borderColor: "#da0000"}}>
+              <div style={{fontWeight: "bold"}}>Liskはバージョン3へアップグレードされました。</div>
+              <div>旧ウォレット(Lisk nano, Lisk Hub, Lisk Desktop 2.0.0未満)の利用が出来なくなっています。</div>
+              <div>また、現時点ではLisk Mobileや各種ハードウェアウォレットが対応していません。</div>
+              <div>LSKを送る場合は<a href="https://lisk.com/wallet" target="_new">Lisk公式サイトから最新のLisk Desktop</a>をダウンロードして下さい。</div>
+              <div>Lisk Desktopの操作については<a href="https://note.com/lisknonanika/m/m4198e454e4c8" target="_new">Desktop 2.0.0 操作方法</a>をご覧下さい。</div>
+            </div>
+          </div>
+
         </div>
       </div>
     );

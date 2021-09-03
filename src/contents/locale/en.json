@@ -12,7 +12,7 @@
   "管理者": "Manager",
   "開発者": "Deveroper",
   "Lisk Japan DelegateのTwitterアカウントの管理": "Manages the 'Lisk Japan Delegate' Twitter account.",
-  "Liskに関する質問内容の回答など日本人へのサポート": "Answering questions about Lisk from Japanese people.",
+  "Liskに関する質問回答などの日本人サポート": "Answering questions about Lisk from Japanese people.",
   "ノード・サイト管理": "Manage the nodes and the site.",
   "Liskに関するツール・アプリの開発": "Develop tools and applications related to Lisk.",
   "データが見つかりませんでした。": "Data not found.",
@@ -23,5 +23,8 @@
   "報酬を確認する": "Check",
   "結果": "Result",
   "報酬": "Reward",
-  "直近10件の報酬": "Latest 10 rewards"
+  "直近10件の報酬": "Latest 10 rewards",
+  "リンク": "Link",
+  "Lisk 公式": "Lisk Official",
+  "日本語コミュニティ": "Japanese Community"
 }
