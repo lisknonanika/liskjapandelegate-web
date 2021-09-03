@@ -10,7 +10,7 @@ class AboutUs extends React.Component {
       <div>
         <div className="App-contents">
           <div className="content-area">
-            <div className="title">About Us</div>
+            <div className="title">{this.props.translation('私たちについて')}</div>
             <div className="content">
               <div>{this.props.translation('日本で活動しているコミュニティです。')}</div>
               <div>{this.props.translation('日本人向けにLiskに関する質問回答など様々な支援を行っています。')}</div>
@@ -19,7 +19,7 @@ class AboutUs extends React.Component {
           </div>
   
           <div className="content-area">
-            <div className="title">Delegate Info</div>
+            <div className="title">{this.props.translation('デリゲート情報')}</div>
             <div className="content">
               <div className="row">
                 <div className="name">liskjapan</div>
@@ -42,7 +42,7 @@ class AboutUs extends React.Component {
                 <div className="text"><a href="https://twitter.com/liskjapan_dlgt" target="_new"><FontAwesomeIcon icon={faTwitter}/> Twitter</a></div>
               </div>
               <div className="row" style={{marginTop: "3px", paddingBottom: "10px", borderBottom: "1px dotted #404041"}}>
-                <div className="text">address</div>
+                <div className="text">{this.props.translation('アドレス')}</div>
                 <div className="address">
                   <a href="https://lisk.observer/account/lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt" target="_new">lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt</a>
                 </div>
@@ -53,7 +53,7 @@ class AboutUs extends React.Component {
           </div>
   
           <div className="content-area">
-            <div className="title">Member</div>
+            <div className="title">{this.props.translation('メンバー情報')}</div>
             <div className="content">
               <div className="row"><div className="job" style={{marginBottom: "1px"}}>- {this.props.translation('管理者')} -</div></div>
               <div className="row">
@@ -101,7 +101,7 @@ class AboutUs extends React.Component {
           </div>
   
           <div className="content-area">
-            <div className="title">Product & Manage</div>
+            <div className="title">{this.props.translation('製品・管理')}</div>
             <div className="content">
               <div className="row">
                 <div className="name">Lisk Sercice</div>
