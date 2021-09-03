@@ -111,6 +111,14 @@ class AboutUs extends React.Component {
                   <a href="https://testnet-service.liskjapandelegate.jp/api/status" target="_new">Testnet</a>
                 </div>
               </div>
+              <div className="row">
+                <div className="name">Lisk Payout</div>
+                <div className="text">
+                  <a href="https://github.com/lisknonanika/lisk-payout" target="_new">Source</a>
+                  &nbsp;/&nbsp;
+                  <a href="https://payout.liskjapandelegate.jp" target="_new">API</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
