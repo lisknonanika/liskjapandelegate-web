@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpen, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faBookOpen, faGlobe, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import '../App.css';
 
@@ -134,11 +134,11 @@ class AboutUs extends React.Component {
               </div>
               <div className="row">
                 <div className="name" style={{whiteSpace: "nowrap"}}>Lisk Observer</div>
-                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://lisk.observer/" target="_new"><FontAwesomeIcon icon={faGlobe}/> Site(Explorer)</a></div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://lisk.observer/" target="_new"><FontAwesomeIcon icon={faProjectDiagram}/> Lisk Explorer</a></div>
               </div>
               <div className="row">
                 <div className="name" style={{whiteSpace: "nowrap"}}>Lisk Scan</div>
-                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://liskscan.com/" target="_new"><FontAwesomeIcon icon={faGlobe}/> Site(Explorer)</a></div>
+                <div className="text" style={{whiteSpace: "nowrap"}}><a href="https://liskscan.com/" target="_new"><FontAwesomeIcon icon={faProjectDiagram}/> Lisk Explorer</a></div>
               </div>
               <div className="row">
                 <div className="name" style={{fontWeight: "bold", whiteSpace: "nowrap"}}>Lisk.vote</div>
