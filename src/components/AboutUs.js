@@ -48,7 +48,7 @@ class AboutUs extends React.Component {
                 </div>
               </div>
               <div className="row" style={{marginTop: "5px"}}><div className="text">{this.props.translation('いつも応援ありがとうございます。')}</div></div>
-              <div className="row"><div className="text">{this.props.translation('liskjapanへの投票・寄付で我々をサポートして下さい。')}</div></div>
+              <div className="row"><div className="text">{this.props.translation('liskjapanへの投票・寄付で私たちをサポートして下さい。')}</div></div>
             </div>
           </div>
   
