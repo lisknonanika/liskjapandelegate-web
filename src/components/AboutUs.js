@@ -63,7 +63,7 @@ class AboutUs extends React.Component {
               <div className="row" style={{borderBottom: "1px dotted #404041"}}>
                 <ul>
                   <li>{this.props.translation('Lisk Japan DelegateのTwitterアカウントの管理')}</li>
-                  <li>{this.props.translation('Liskに関する質問内容の回答など日本人へのサポートを実施')}</li>
+                  <li>{this.props.translation('Liskに関する質問内容の回答など日本人へのサポート')}</li>
                 </ul>
               </div>
   
@@ -94,7 +94,7 @@ class AboutUs extends React.Component {
                 <ul>
                   <li>{this.props.translation('ノード・サイト管理')}</li>
                   <li>{this.props.translation('Liskに関するツール・アプリの開発')}</li>
-                  <li>{this.props.translation('Liskに関する質問内容の回答など日本人へのサポートを実施')}</li>
+                  <li>{this.props.translation('Liskに関する質問内容の回答など日本人へのサポート')}</li>
                 </ul>
               </div>
             </div>
