@@ -23,21 +23,6 @@ class AboutUs extends React.Component {
             <div className="content">
               <div className="row">
                 <div className="name">liskjapan</div>
-                <div className="address">
-                  <a href="https://lisk.observer/account/lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt" target="_new">lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt</a>
-                </div>
-              </div>
-              <div className="row" style={{marginTop: "5px"}}>
-                <div className="text">{this.props.translation('※投票・寄付は上記へお願いします。')}</div>
-              </div>
-            </div>
-          </div>
-  
-          <div className="content-area">
-            <div className="title">Member</div>
-            <div className="content">
-              <div className="row">
-                <div className="name">Lisk Japan Delegate</div>
                 <div className="text">
                   <a href="https://lisk.observer/account/lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt" target="_new">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.4 136.3" className="lisk-icon">
@@ -56,24 +41,33 @@ class AboutUs extends React.Component {
                 </div>
                 <div className="text"><a href="https://twitter.com/liskjapan_dlgt" target="_new"><FontAwesomeIcon icon={faTwitter}/> Twitter</a></div>
               </div>
-              <div className="row" style={{borderBottom: "1px dotted #404041"}}>
-                <ul>
-                  <li>{this.props.translation('当コミュニティが運営するTwitterアカウント')}</li>
-                  <li>{this.props.translation('Liskに関する情報を定期的に自動ツイート')}</li>
-                </ul>
+              <div className="row" style={{marginTop: "3px", paddingBottom: "10px", borderBottom: "1px dotted #404041"}}>
+                <div className="text">address</div>
+                <div className="address">
+                  <a href="https://lisk.observer/account/lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt" target="_new">lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt</a>
+                </div>
               </div>
+              <div className="row" style={{marginTop: "5px"}}><div className="text">{this.props.translation('いつも応援ありがとうございます。')}</div></div>
+              <div className="row"><div className="text">{this.props.translation('liskjapanへの投票・寄付で我々をサポートして下さい。')}</div></div>
+            </div>
+          </div>
   
+          <div className="content-area">
+            <div className="title">Member</div>
+            <div className="content">
+              <div className="row"><div className="job" style={{marginBottom: "1px"}}>- {this.props.translation('管理者')} -</div></div>
               <div className="row">
                 <div className="name">ebifu222</div>
                 <div className="text"><a href="https://twitter.com/ebifu222" target="_new"><FontAwesomeIcon icon={faTwitter}/> Twitter</a></div>
               </div>
               <div className="row" style={{borderBottom: "1px dotted #404041"}}>
                 <ul>
-                  <li>{this.props.translation('Twitter:Lisk Japan Delegate の管理者')}</li>
+                  <li>{this.props.translation('Lisk Japan DelegateのTwitterアカウントの管理')}</li>
                   <li>{this.props.translation('Liskに関する質問内容の回答など日本人へのサポートを実施')}</li>
                 </ul>
               </div>
   
+              <div className="row"><div className="job">- {this.props.translation('開発者')} -</div></div>
               <div className="row">
                 <div className="name">ys_mdmg</div>
                 <div className="text">
@@ -98,7 +92,7 @@ class AboutUs extends React.Component {
               </div>
               <div className="row">
                 <ul>
-                  <li>{this.props.translation('ノード・サイト管理者')}</li>
+                  <li>{this.props.translation('ノード・サイト管理')}</li>
                   <li>{this.props.translation('Liskに関するツール・アプリの開発')}</li>
                   <li>{this.props.translation('Liskに関する質問内容の回答など日本人へのサポートを実施')}</li>
                 </ul>

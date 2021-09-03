@@ -108,6 +108,12 @@
   white-space: nowrap;
 }
 
+.content-area .job {
+  font-size: 0.9rem;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+}
+
 .content-area .name {
   font-size: 0.8rem;
   font-family: 'Gilroy', sans-serif;
@@ -137,7 +143,7 @@
 
 .content-area ul {
   margin: 0px;
-  padding: 5px 0px 10px 30px;
+  padding: 0px 0px 10px 30px;
 }
 
 .form-area {
