@@ -9,14 +9,21 @@ class Reward extends React.Component {
     this.state = {
       address: "",
       reward: "0",
-      history: []
+      history: [],
+      amount: ""
     };
     this.setText = this.setText.bind(this);
+    this.setAmount = this.setAmount.bind(this);
     this.checkhReward = this.checkhReward.bind(this);
+    this.checkhWeekReward = this.checkhWeekReward.bind(this);
   }
 
   setText = (event) => {
     this.setState({address: event.target.value});
+  }
+
+  setAmount = (event) => {
+    this.setState({amount: event.target.value});
   }
 
   checkhReward = async() => {
@@ -59,7 +66,54 @@ class Reward extends React.Component {
     }
 
     await Swal.fire({text: this.props.translation('見つかりました！'), icon: 'success', confirmButtonColor: '#3085d6'});
-    this.setState({reward: reward, history: history});
+    this.setState({address:"", reward:reward, history:history, amount:""});
+  }
+
+  checkhWeekReward = async() => {
+    if (!this.state.amount.trim()) {
+      await Swal.fire({text: this.props.translation('枚数を入力してください。'), icon: 'error', confirmButtonColor: '#3085d6'});
+      return;
+    }
+
+    if (isNaN(this.state.amount.trim())) {
+      await Swal.fire({text: this.props.translation('10以上の数値を入力してください。'), icon: 'error', confirmButtonColor: '#3085d6'});
+      return;
+    }
+
+    let target = 0;
+    try {
+      target = Math.floor(+this.state.amount.trim() / 10) * 10;
+      if (target < 10) {
+        await Swal.fire({text: this.props.translation('10以上の数値を入力してください。'), icon: 'error', confirmButtonColor: '#3085d6'});
+        return;
+      }
+
+    } catch (e) {
+      await Swal.fire({text: this.props.translation('10以上の数値を入力してください。'), icon: 'error', confirmButtonColor: '#3085d6'});
+      return;
+    }
+
+    let receive = "0";
+    let selfvote = "0";
+    try {
+      const res = await fetch("https://service.lisk.com/api/v2/accounts?isDelegate=true&username=liskjapan", {mode: 'cors'});
+      const json = await res.json();
+      const data = json.data[0];
+      receive = data.dpos.delegate.totalVotesReceived;
+      selfvote = data.dpos.sentVotes.find((v) => {return v.delegateAddress === "lsk4u6zpqzzotweghzkyuqjmyeujbna5pkxm99vdt"}).amount;
+
+    } catch (err) {
+      await Swal.fire({text: this.props.translation('データが見つかりませんでした。'), icon: 'error',confirmButtonColor: '#3085d6'});
+      return;
+    }
+
+    let weekReward = "0";
+    const total = (+convertBeddowsToLSK(receive)) - (+convertBeddowsToLSK(selfvote));
+    if (total > 0) {
+      weekReward = Math.floor(target / total * 290 * 100000000) / 100000000;
+    }
+    await Swal.fire({text: this.props.translation('報酬は約') + weekReward.toString() + this.props.translation('です。'), icon: 'success',confirmButtonColor: '#3085d6'});
+    this.setState({address:"", reward:"0", history:[], amount:""});
   }
 
   render() {
@@ -97,6 +151,24 @@ class Reward extends React.Component {
                     :
                     "NO DATA"
                   }
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="content-area">
+            <div className="title">{this.props.translation('1週間の報酬予想')}</div>
+            <div className="content">
+              <div className="text">
+                <div>{this.props.translation('投票枚数で1週間にどのくらい報酬が入るかを表示します。')}</div>
+                <div style={{marginTop: "5px", marginBottom: "5px", color: "blue"}}>{this.props.translation('※結果はliskjapanが1週間アクティブデリゲートだった場合の鋳造報酬と自己投票を除いた総投票数から算出している為、確実に入手できる報酬ではないことにご注意ください。')}</div>
+              </div>
+              <div className="form-area">
+                <div>
+                  <input type="text" className="textbox" value={this.state.amount} placeholder={this.props.translation('投票数を入力して下さい')} onChange={(e) => this.setAmount(e)} />
+                </div>
+                <div>
+                  <button className="button" onClick={async () => {await this.checkhWeekReward()}}>{this.props.translation('報酬を確認する')}</button>
                 </div>
               </div>
             </div>

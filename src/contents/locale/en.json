@@ -26,5 +26,13 @@
   "直近10件の報酬": "Latest 10 rewards",
   "リンク": "Link",
   "Lisk 公式": "Lisk Official",
-  "日本語コミュニティ": "Japanese Community"
+  "日本語コミュニティ": "Japanese Community",
+  "1週間の報酬予想": "Weekly Rewards (Prediction)",
+  "投票枚数で1週間にどのくらい報酬が入るかを表示します。": "The number of votes you enter will show you how much you will be paid per week.",
+  "※結果はliskjapanが1週間アクティブデリゲートだった場合の鋳造報酬と自己投票を除いた総投票数から算出している為、確実に入手できる報酬ではないことにご注意ください。": "*Please note that the results are calculated based on the forging rewards and the number of total-votes (exclude self-vote) if liskjapan was an active delegate for a week, so the rewards are not guaranteed to be available.",
+  "投票数を入力して下さい": "Enter number of votes.",
+  "枚数を入力してください。": "Number of votes is required.",
+  "10以上の数値を入力してください。": "Enter a number greater than or equal to 10.",
+  "報酬は約": "Reward: about",
+  "です。": ""
 }
