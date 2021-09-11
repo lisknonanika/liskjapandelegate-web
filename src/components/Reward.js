@@ -35,7 +35,7 @@ class Reward extends React.Component {
     let reward = "0";
     let history = [];
     try {
-      const res = await fetch("https://payout.liskjapandelegate.jp", {mode: 'cors'});
+      const res = await fetch("https://mainnet-payout.liskjapandelegate.jp", {mode: 'cors'});
       const json = await res.json();
       const data = json.voter.find((v) => this.state.address.toLocaleLowerCase() === v.address.toLocaleLowerCase());
       reward = convertBeddowsToLSK(data.reward);
