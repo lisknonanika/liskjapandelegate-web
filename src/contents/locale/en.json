@@ -34,5 +34,8 @@
   "枚数を入力してください。": "Number of votes is required.",
   "10以上の数値を入力してください。": "Enter a number greater than or equal to 10.",
   "報酬は約": "Reward: about",
-  "です。": ""
+  "です。": "",
+  "おしらせ": "Notice",
+  "新デリゲート": "New Delegate",
+  "新デリゲートサイト": "New Delegate Site"
 }
