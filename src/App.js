@@ -7,7 +7,6 @@ import './App.css';
 import flag_jp from './contents/image/flag_jp.png';
 import flag_us from './contents/image/flag_us.png';
 import AboutUs from './components/AboutUs';
-import Reward from './components/Reward';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -22,7 +21,6 @@ i18n.use(initReactI18next).init({
 function App() {
   const [t, i18n] = useTranslation();
   const [lang, setLang] = useState('ja');
-  const [page, setPage] = useState(0);
 
   useEffect(() => {
     i18n.changeLanguage(lang);
@@ -32,13 +30,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>Delegate liskjapan</div>
-        <div className="App-language">Lang: {lang === 'en'? <img src={flag_us} alt="en" onClick={() => setLang("ja")} align="top"/>:<img src={flag_jp} alt="ja" onClick={() => setLang("en")} align="top"/>}</div>
       </header>
-      <div className="App-menu">
-        <div className={page === 0? "active menu": "menu"} onClick={() => setPage(0)}>About Us</div>
-        <div className={page === 1? "active menu": "menu"} onClick={() => setPage(1)}>Vote Reward</div>
-      </div>
-      {page === 0? <AboutUs translation={t}/>: <Reward translation={t}/>}
+      <AboutUs translation={t}/>
     </div>
   );
 }
